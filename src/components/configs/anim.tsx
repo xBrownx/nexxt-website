@@ -1,0 +1,1 @@
+export const fadeInOut = {    hide: 'opacity-0',    show: 'opacity-1',};export const swipeInOutUp = {    hide: '-translate-y-full',    show: 'translate-y-0',};
