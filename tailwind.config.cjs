@@ -28,7 +28,8 @@ module.exports = {
         'location-button': 'invert(20%) sepia(82%) saturate(370%) hue-rotate(130deg) brightness(94%) contrast(92%)',
       },
       fontFamily: {
-        primaryLight: ['TWKEverett-Light', 'sans-serif'],
+        logo: ['Kirang Haerang', 'sans-serif'],
+        primaryLight: ['Oswald', 'sans-serif'],
         primaryRegular: ['TWKEverett-Regular', 'sans-serif'],
         secondaryLight: ['SuisseIntl-Light', 'sans-serif'],
         secondaryRegular: ['SuisseIntl-Regular', 'sans-serif'],
@@ -36,54 +37,28 @@ module.exports = {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
       colors: {
-        border: 'hsl(var(--border))',
-        input: 'hsl(var(--input))',
-        ring: 'hsl(var(--ring))',
-        background: {
-          primary: '#ded9d0',
-          secondary: '#162425',
-          modal: 'rgba(22, 74, 73, 0.3)'
-        },
-        font: {
-          primary: {
-            full: "#164A49",
-            light: "rgba(22, 74, 73, 0.70);"
-          },
-          secondary: "",
-        },
-        button: {
-          primary: "#164A49",
-        },
-        foreground: 'hsl(var(--foreground))',
-        progress: '#DED9D0',
         primary: {
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))',
+          DEFAULT: '#5A86AD',
+          blue: '#5A86AD',
+          grey: '#1A1A1A',
+          white: '#EDF5F6',
+          red: '#8F454E',
         },
         secondary: {
-          DEFAULT: 'hsl(var(--secondary))',
-          foreground: 'hsl(var(--secondary-foreground))',
+          DEFAULT: '#293D3E',
+          darkBlue: '#293D3E',
         },
-        destructive: {
-          DEFAULT: 'hsl(var(--destructive))',
-          foreground: 'hsl(var(--destructive-foreground))',
-        },
-        muted: {
-          DEFAULT: 'hsl(var(--muted))',
-          foreground: 'hsl(var(--muted-foreground))',
-        },
-        accent: {
-          DEFAULT: 'hsl(var(--accent))',
-          foreground: 'hsl(var(--accent-foreground))',
-        },
-        popover: {
-          DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))',
-        },
-        card: {
-          DEFAULT: 'hsl(var(--card))',
-          foreground: 'hsl(var(--card-foreground))',
-        },
+        navbar: {
+          logo: '#EDF5F6',
+          link: '#EDF5F6',
+          button: {
+            DEFAULT: '#EDF5F6',
+            hover: {
+              DEFAULT: '#8F454E',
+              secondary: '#EDF5F6'
+            }
+          }
+        }
       },
       borderRadius: {
         lg: 'var(--radius)',

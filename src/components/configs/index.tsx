@@ -1,1 +1,0 @@
-export * from './anim';export * from '@/features/availability/config/availability-config';

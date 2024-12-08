@@ -1,1 +1,1 @@
-export * from './displayTitle';
+export * from './display-title';

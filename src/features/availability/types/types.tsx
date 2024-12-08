@@ -1,1 +1,0 @@
-import { availabilityAssets as ASSETS } from '@/assets';export type Level = {    key: string;    lvl: number;    isActive: boolean;};export type VectorAssetKey = keyof (typeof ASSETS.img)['shadow-vectors'];

@@ -1,1 +1,0 @@
-export const enquireConfig = {    firstName: 'First Name',    lastName: 'Last Name',    email: 'Email',    phone: 'Phone Number',    msg: 'Message',};

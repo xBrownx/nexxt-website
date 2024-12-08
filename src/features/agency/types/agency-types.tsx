@@ -1,1 +1,0 @@
-export type AgentType = {    id: string;    name: string;    phone: string;    email: string;};export type AgencyType = {    name: string;    link: string;    agents: AgentType[];};

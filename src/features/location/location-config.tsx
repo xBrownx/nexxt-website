@@ -1,1 +1,0 @@
-export const locationConfig = {    fnb: {        title: 'F&B',    },    retail: {        title: 'RETAIL',    },    trains: {        title: 'TRAINS',    },    hotels: {        title: 'HOTELS',    },};export type LocationConfigKey = keyof typeof locationConfig;
