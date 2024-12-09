@@ -1,1 +1,1 @@
-import React from 'react';import { AboutUsLanding } from '@/routes/about-us/pages';const AboutUsRoute = () => {    return (        <>            <AboutUsLanding />        </>    );};export default AboutUsRoute;
+import React from 'react';import { AboutUsLanding } from '@/routes/about-us';const AboutUsRoute = () => {    return (        <>            <AboutUsLanding />        </>    );};export default AboutUsRoute;
