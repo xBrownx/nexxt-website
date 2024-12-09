@@ -45,6 +45,13 @@ html {
 
 @layer base {
   :root {
+
+    --primary-grey: #262626;
+    --primary-white: #ffffff;
+    --primary-green: #00c79c;
+    --secondary-blue: #30d2d6;
+    --accent-purple: #c4adee;
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 

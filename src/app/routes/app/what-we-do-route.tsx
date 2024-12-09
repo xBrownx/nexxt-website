@@ -1,0 +1,1 @@
+import React from 'react';import { WhatWeDoLanding } from '@/routes/what-we-do/pages';export function WhatWeDoRoute() {    return (        <>            <WhatWeDoLanding />        </>    );}

@@ -1,0 +1,1 @@
+import React from 'react';export function EnquireLanding() {    return <div></div>;}

@@ -1,0 +1,1 @@
+import { LandingLanding } from '@/routes/landing/pages';import { LandingOverview } from '@/routes/landing/pages/landing-overview';export function LandingRoute() {    return (        <>            <LandingLanding />            <LandingOverview />        </>    );}

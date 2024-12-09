@@ -1,0 +1,1 @@
+import React, { lazy, Suspense } from 'react';import { Outlet } from 'react-router';import { Header } from '@/features/header';export const ErrorBoundary = () => {    return <div>Something went wrong!</div>;};const AppRoot = () => {    return (        <Header>            <Outlet />        </Header>    );};export default AppRoot;

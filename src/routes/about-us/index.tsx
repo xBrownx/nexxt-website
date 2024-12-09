@@ -1,0 +1,1 @@
+export * from '../../app/routes/app/about-us-route';

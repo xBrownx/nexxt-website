@@ -1,1 +1,1 @@
-export const THEME_COLOURS = {    primary: {        blue: '#5A86AD',        grey: '#1A1A1A',    },};
+export const THEME_COLOURS = {    primary: {        green: '#00c79c',        grey: '#262626',        white: '#ffffff',    },    secondary: {        blue: '#30d2d6',    },    accent: {        purple: '#c4adee',    },};

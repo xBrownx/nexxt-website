@@ -13,19 +13,11 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'nav-gradient': 'linear-gradient(#000 0 0, #FFF 0 0)',
-        'availability': "url('https://140-william-assets.s3.ap-southeast-2.amazonaws.com/images/availability/availability-background-optimised.jpg')",
-        'availability-mobile': "url('https://140-william-assets.s3.ap-southeast-2.amazonaws.com/images/availability/mobile-background-optimised.jpg')",
+        'nav-gradient': 'linear-gradient(#000 0 0, var(--accent-purple) 0 0)',
       },
       backgroundSize: {
         'nav-size': '0 2px',
         'nav-size-hover': '100% 2px',
-      },
-      boxShadow: {
-        'modal': '0 4px 30px rgba(0, 0, 0, 0.4)',
-      },
-      filter: {
-        'location-button': 'invert(20%) sepia(82%) saturate(370%) hue-rotate(130deg) brightness(94%) contrast(92%)',
       },
       fontFamily: {
         logo: ['Kirang Haerang', 'sans-serif'],
@@ -38,49 +30,40 @@ module.exports = {
       },
       colors: {
         primary: {
-          DEFAULT: '#5A86AD',
-          blue: '#5A86AD',
-          grey: '#1A1A1A',
-          white: '#EDF5F6',
-          red: '#8F454E',
+          DEFAULT: 'var(--primary-grey)',
+          grey: 'var(--primary-grey)',
+          white: 'var(--primary-white)',
+          green: 'var(--primary-green)',
         },
         secondary: {
-          DEFAULT: '#293D3E',
-          darkBlue: '#293D3E',
+          DEFAULT: 'var(--secondary-blue)',
+          blue: 'var(--secondary-blue)',
+        },
+        accent: {
+          DEFAULT: 'var(--accent-purple)',
+          purple: 'var(--accent-purple)',
         },
         navbar: {
-          logo: '#EDF5F6',
-          link: '#EDF5F6',
+          logo: 'var(--primary-white)',
+          link: 'var(--primary-white)',
           button: {
-            DEFAULT: '#EDF5F6',
+            DEFAULT: 'var(--secondary-blue)',
             hover: {
-              DEFAULT: '#8F454E',
-              secondary: '#EDF5F6'
+              DEFAULT: 'var(--secondary-blue)',
+              secondary: 'var(--primary-white)'
             }
           }
         }
-      },
-      borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
       },
       keyframes: {
         'infinite-scroll': {
           from: { transform: 'translateX(0%)' },
           to: { transform: 'translateX(-50%)' },
         },
-        'accordion-up': {
-          from: { height: 'var(--radix-accordion-content-height)' },
-          to: { height: '0' },
-        },
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 30s linear infinite',
       },
-      gap: {
-        'avail': '0.76%'
-      }
     },
   },
   plugins: [require('tailwindcss-animate'), require('@tailwindcss/typography')],

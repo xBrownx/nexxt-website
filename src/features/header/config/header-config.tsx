@@ -1,1 +1,0 @@
-export const headerConfig = {    availability: {        text: 'WHAT WE DO',        type: 'link',    },    history: {        text: 'OUR WORK',        type: 'link',    },    agency: {        text: 'ABOUT US',        type: 'link',    },    enquire: {        text: 'ENQUIRE',        type: 'btn',    },};export type HeaderConfigKey = keyof typeof headerConfig;
