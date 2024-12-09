@@ -1,1 +1,1 @@
-import React from 'react';export function OurWorkLanding() {    return <div></div>;}
+import React from 'react';import { Section } from '@/components/layouts';export function OurWorkLanding() {    return (        <Section className="flex h-screen items-center justify-center bg-primary-green">            <div className="flex h-screen w-full items-center justify-center">                <h1 className={'text-8xl text-primary-white'}>OUR WORK</h1>            </div>        </Section>    );}

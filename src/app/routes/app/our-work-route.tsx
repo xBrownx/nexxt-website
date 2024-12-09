@@ -1,1 +1,1 @@
-import React from 'react';import { WhatWeDoLanding } from '@/routes/what-we-do/pages';export function OurWorkRoute() {    return (        <>            <WhatWeDoLanding />        </>    );}
+import React from 'react';import { OurWorkLanding } from '@/routes/our-work/pages';const OurWorkRoute = () => {    return (        <>            <OurWorkLanding />        </>    );};export default OurWorkRoute;

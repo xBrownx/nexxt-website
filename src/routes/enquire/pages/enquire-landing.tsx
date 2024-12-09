@@ -1,1 +1,1 @@
-import React from 'react';export function EnquireLanding() {    return <div></div>;}
+import React from 'react';import { Section } from '@/components/layouts';export function EnquireLanding() {    return (        <Section className="flex h-screen items-center justify-center bg-primary-green">            <div className="flex h-screen w-full items-center justify-center">                <h1 className={'text-8xl text-primary-white'}>ENQUIRE</h1>            </div>        </Section>    );}
