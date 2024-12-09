@@ -1,1 +1,0 @@
-export * from '../../app/routes/app/what-we-do-route';
