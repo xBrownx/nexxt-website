@@ -33,7 +33,7 @@ const Logo = () => {
 
 const NavigationLinks = () => {
     const navigation = [
-        { name: 'What We Do', to: paths.whatWeDo.getHref() },
+        { name: 'Services', to: paths.services.getHref() },
         { name: 'Our Work', to: paths.ourWork.getHref() },
         { name: 'About Us', to: paths.aboutUs.getHref() },
     ].filter(Boolean) as NavigationItem[];

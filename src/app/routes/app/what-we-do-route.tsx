@@ -1,1 +1,0 @@
-import React from 'react';import { WhatWeDoLanding } from '@/routes/what-we-do';export const WhatWeDoRoute = () => {    return (        <>            <WhatWeDoLanding />        </>    );};export default WhatWeDoRoute;
