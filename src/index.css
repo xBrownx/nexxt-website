@@ -163,3 +163,9 @@ code {
     src: local('TWKEverett-Regular'), url(./assets/fonts/TWKEverett-Regular.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Evermore';
+  src: url('./assets/fonts/Evermore.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -5,10 +5,10 @@ export function ServicesLanding() {
     return (
         <Section className="flex h-screen items-center justify-center bg-secondary ">
             <div className="flex h-screen w-full items-center justify-center">
-                <h1 className={'text-8xl text-primary-white'}>
-                    WHAT THE FUCK WE DO
-                </h1>
+                <h1 className={'text-8xl text-primary-white'}>SERVICES</h1>
             </div>
         </Section>
     );
 }
+
+

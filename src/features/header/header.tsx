@@ -1,12 +1,11 @@
-import * as React from 'react';
-import { NavLink } from 'react-router';
+import * as React from 'react';import { NavLink } from 'react-router';
 
 import { Link } from '@/components/ui/link';
 import { paths } from '@/config/paths';
 import { useScroll } from '@/hooks/use-scroll';
 import { cn } from '@/utils/cn';
 
-import websitelogo from '@/assets/images/websitelogo.png';
+import website from '@/assets/images/websitelogo.png';
 
 type NavigationItem = {
     name: string;
@@ -21,9 +20,9 @@ const Logo = () => {
                     className={`w-fit items-center  text-5xl font-normal text-navbar-logo `}
                 >
                     <img
-                        src={websitelogo}
+                        src={website}
                         alt="Logo"
-                        style={{height: '100px', width: '100px'}}
+                        style={{ height: '100px', width: '100px' }}
                     />
                 </span>
             </div>
@@ -88,7 +87,7 @@ export function Header({ children }: { children: React.ReactNode }) {
                     <NavigationLinks />
                 </nav>
             </aside>
-            <main>{children}</main>
+            <main className="mt-40">{children}</main>
         </div>
     );
 }
