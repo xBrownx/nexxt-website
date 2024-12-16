@@ -1,1 +1,1 @@
-export * from './pages/services-landing';
+import ServicesRoute from './services-route';export default ServicesRoute;

@@ -1,1 +1,0 @@
-import React from 'react';import { EnquireLanding } from '@/routes/enquire';const EnquireRoute = () => {    return (        <>            <EnquireLanding />        </>    );};export default EnquireRoute;

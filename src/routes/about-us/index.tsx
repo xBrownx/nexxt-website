@@ -1,1 +1,1 @@
-export * from './pages/about-us-landing';
+import AboutUsRoute from './about-us-route';export default AboutUsRoute;

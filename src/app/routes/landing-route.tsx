@@ -1,1 +1,0 @@
-import { LandingLanding } from '@/routes/landing';import { LandingOverview } from '@/routes/landing/pages/landing-overview';const LandingRoute = () => {    return (        <>            <LandingLanding />            <LandingOverview />        </>    );};export default LandingRoute;

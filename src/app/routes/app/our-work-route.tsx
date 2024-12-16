@@ -1,1 +1,0 @@
-import React from 'react';import { OurWorkLanding } from '@/routes/our-work';const OurWorkRoute = () => {    return (        <>            <OurWorkLanding />        </>    );};export default OurWorkRoute;

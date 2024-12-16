@@ -1,1 +1,1 @@
-export * from './pages/enquire-landing';
+import EnquireRoute from './enquire-route';export default EnquireRoute;

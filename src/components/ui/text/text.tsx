@@ -1,0 +1,1 @@
+import React from 'react';import { cn } from '@/utils/cn';export const Heading = ({    className,    children,}: {    className?: string;    children: React.ReactNode;}) => {    return (        <h1 className={cn('font-normal font-lato text-7xl', className)}>            {children}        </h1>    );};

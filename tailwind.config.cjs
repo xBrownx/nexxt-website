@@ -14,15 +14,20 @@ module.exports = {
     extend: {
       backgroundImage: {
         'nav-gradient': 'linear-gradient(#000 0 0, var(--accent-purple) 0 0)',
+        'submit-gradient': 'linear-gradient(0.25turn, #C4ADEE, #00C79C)',
+        'y-grey-gradient': 'linear-gradient(#000000, #3A3D40)',
+        'x-grey-gradient': 'linear-gradient(0.25turn, #3A3D40, #262626)',
+        'border-gradient': 'linear-gradient(0.25turn, #C4ADEE 0%, #00C79C 100%)',
+        'border-gradient-reverse': 'linear-gradient(0.25turn, #00C79C 0%, #C4ADEE 100%)',
       },
       backgroundSize: {
         'nav-size': '0 2px',
         'nav-size-hover': '100% 2px',
       },
       fontFamily: {
-        title: ['Evermore', 'sans-serif'],              
-        arial: ['Arial', 'sans-serif'],   
-        sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        title: ['Evermore', 'sans-serif'],
+        lato: ['Lato'],
+        arial: ['Arial', 'sans-serif'],
       },
       colors: {
         primary: {
