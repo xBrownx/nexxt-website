@@ -1,6 +1,4 @@
-/** @type {import('tailwindcss').Config} */
-const defaultTheme = require('tailwindcss/defaultTheme');
-
+require('tailwindcss/defaultTheme');
 module.exports = {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
@@ -19,10 +17,14 @@ module.exports = {
         'x-grey-gradient': 'linear-gradient(0.25turn, #3A3D40, #262626)',
         'border-gradient': 'linear-gradient(0.25turn, #C4ADEE 0%, #00C79C 100%)',
         'border-gradient-reverse': 'linear-gradient(0.25turn, #00C79C 0%, #C4ADEE 100%)',
+        'mobile-frame': "url('./assets/mobile-frame.png')",
       },
       backgroundSize: {
         'nav-size': '0 2px',
         'nav-size-hover': '100% 2px',
+      },
+      transitionDuration: {
+        '1500': '1500ms'
       },
       fontFamily: {
         title: ['Evermore', 'sans-serif'],
