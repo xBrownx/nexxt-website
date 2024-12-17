@@ -13,8 +13,8 @@ module.exports = {
       backgroundImage: {
         'nav-gradient': 'linear-gradient(#000 0 0, var(--accent-purple) 0 0)',
         'submit-gradient': 'linear-gradient(0.25turn, #C4ADEE, #00C79C)',
-        'y-grey-gradient': 'linear-gradient(#000000, #3A3D40)',
-        'x-grey-gradient': 'linear-gradient(0.25turn, #3A3D40, #262626)',
+        'y-grey-gradient': 'linear-gradient(#1A1A1A, #262626)',
+        'x-grey-gradient': 'linear-gradient(0.50turn, #262626, #1A1A1A)',
         'border-gradient': 'linear-gradient(0.25turn, #C4ADEE 0%, #00C79C 100%)',
         'border-gradient-reverse': 'linear-gradient(0.25turn, #00C79C 0%, #C4ADEE 100%)',
         'mobile-frame': "url('./assets/mobile-frame.png')",
