@@ -9,7 +9,7 @@ import replikaLogo from '@/routes/home/assets/replika-logo.png';
 export const BrandsScroll = () => {
     return (
         <InfiniteScroll>
-            <div className={'flex w-full flex-row'}>
+            <div className={'flex w-full flex-row px-8'}>
                 <a
                     href="https://lctransit.com"
                     target="_blank"
