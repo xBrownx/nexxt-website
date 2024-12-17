@@ -1,1 +1,17 @@
-import React from 'react';import { AboutUsLanding } from './pages/about-us-landing';import { MeetTheTeam } from './pages/meet-the-team';const AboutUsRoute = () => {    return (        <>            <AboutUsLanding />            <MeetTheTeam />        </>    );};export default AboutUsRoute;
+import React from 'react';
+
+import { AboutUsLanding } from './pages/about-us-landing';
+import { MeetTheTeam } from './pages/meet-the-team';
+import { CbxFooter } from '../home/pages/cbx-footer';
+
+const AboutUsRoute = () => {
+    return (
+        <>
+            <AboutUsLanding />
+            <MeetTheTeam />
+            <CbxFooter/>
+        </>
+    );
+};
+
+export default AboutUsRoute;
