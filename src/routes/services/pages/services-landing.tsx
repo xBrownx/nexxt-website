@@ -1,6 +1,4 @@
-import React from 'react';
-
-import { Heading } from '@/components/ui/text';
+import React from 'react';import { Heading } from '@/components/ui/text';
 import bgFlare from '@/routes/services/assets/bg-flare.png';
 
 import { ServiceCards } from '@/routes/services/components/service-cards';
