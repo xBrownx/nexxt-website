@@ -18,6 +18,8 @@ module.exports = {
         'border-gradient': 'linear-gradient(0.25turn, #C4ADEE 0%, #00C79C 100%)',
         'border-gradient-reverse': 'linear-gradient(0.25turn, #00C79C 0%, #C4ADEE 100%)',
         'mobile-frame': "url('./assets/mobile-frame.png')",
+        'ring-purple-gradient': 'linear-gradient(0.25turn, #262626  0%, var(--accent-purple) 50%)',
+        'ring-green-gradient': 'linear-gradient(0.5turn, #262626  0%, var(--primary-green) 40%)',
       },
       backgroundSize: {
         'nav-size': '0 2px',
@@ -109,6 +111,10 @@ module.exports = {
             opacity: '1',                  
           },
         },
+        'rotate': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        }
         
       },
       animation: {
@@ -121,6 +127,7 @@ module.exports = {
         'wiggle': 'wiggle 1s ease-in-out infinite',
         'slideIn': 'slideIn 10s ease-out',
         'slide-up': 'slide-up 0.5s ease-out forwards',
+        'rotate': 'rotate 10s linear infinite',
       },
     },
   },
