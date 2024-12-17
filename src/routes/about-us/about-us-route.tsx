@@ -1,1 +1,1 @@
-import React from 'react';import { AboutUsLanding } from './pages/about-us-landing';const AboutUsRoute = () => {    return (        <div className="mt-40">            <AboutUsLanding />        </div>    );};export default AboutUsRoute;
+import React from 'react';import { AboutUsLanding } from './pages/about-us-landing';import { MeetTheTeam } from './pages/meet-the-team';const AboutUsRoute = () => {    return (        <>            <AboutUsLanding />            <MeetTheTeam />        </>    );};export default AboutUsRoute;
