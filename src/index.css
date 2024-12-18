@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 :root {
   --swiper-pagination-color: #FFF;
   --swiper-navigation-color: #FFF;
@@ -51,6 +52,10 @@ html {
     --primary-green: #00c79c;
     --secondary-blue: #30d2d6;
     --accent-purple: #c4adee;
+
+    --tw-shadow-color-01: rgba(255, 0, 0, 0.75);
+    --tw-shadow-color-02: rgba(0, 255, 0, 0.75);
+    --tw-shadow-color-03: rgba(0, 0, 255, 0.75);
 
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -168,4 +173,12 @@ code {
   src: url('./assets/fonts/Evermore.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
+}
+
+@layer utilities {
+  * {
+    --tw-clip-glitch-01: polygon(0 0, 100% 0, 100% 45%);
+    --tw-clip-glitch-02: polygon(100% 0, 100% 75%);
+  }
+
 }
