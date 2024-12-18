@@ -34,14 +34,15 @@ const ServiceCard = ({
                     'flex size-full flex-col gap-4 rounded-xl bg-x-grey-gradient p-10 ' //this is the servicecards boxes
                 }
             >
-                <img src={icon} alt={''} className={'h-16 w-fit'} />
-                <h2 className={'font-lato text-4xl font-bold text-white'}>
+                                <h2 className={'font-subheading text-1xl font-bold text-white tracking-custom uppercase'}>
                     {title}
                 </h2>
-                <p className={'font-lato text-xl text-white/80'}>{body}</p>
+                <img src={icon} alt={''} className={'h-16 w-fit'} />
+
+                <p className={'font-bodycopy text-sm text-white tracking-wider leading-loose'}>{body}</p>
                 <h3
                     className={
-                        'mt-6 font-lato font-bold text-secondary-blue underline hover:cursor-pointer'
+                        'mt-6 font-subheading tracking-custom text-white underline hover:cursor-pointer'
                     }
                 >
                     ENQUIRE
@@ -109,7 +110,7 @@ export const ServiceCards = () => {
                 />
                 <ServiceCard
                     icon={commerceIcon}
-                    title={'E-Commerce & M-Commerce Solutions'}
+                    title={'E&M-Commerce Solutions'}
                     body={
                         "We build seamless e-commerce and mobile commerce platforms designed to enhance your customers' shopping experience. From intuitive product catalogs to secure payment systems, we develop scalable solutions to help your business thrive in the digital marketplace. Whether you're launching an online store or enhancing an existing one, we’ve got you covered."
                     }
