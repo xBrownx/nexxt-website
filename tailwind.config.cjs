@@ -22,6 +22,8 @@ module.exports = {
                     'linear-gradient(0.50turn, #262626AA, #1A1A1AAA)',
                 'submit-gradient':
                     'linear-gradient(0.25turn, #C4ADEE, #00C79C)',
+                'link-gradient':
+                    'linear-gradient(0.25turn, #00C79C, #C4ADEE)',
                 'y-grey-gradient': 'linear-gradient(#1A1A1A, #262626)',
                 'x-grey-gradient':
                     'linear-gradient(0.50turn, #262626, #1A1A1A)',
@@ -73,13 +75,13 @@ module.exports = {
                         },
                     },
                 },
-                textShadow: {
-                    glitch:
-                        '' +
-                        '0.05em 0 0 var(--tw-shadow-color-01), ' +
-                        '-0.025em -0.05em 0 var(--tw-shadow-color-02), ' +
-                        '0.025em 0.05em 0 var(--tw-shadow-color-03)',
-                },
+            },
+            textShadow: {
+                glitch:
+                    '' +
+                    '0.05em 0 0 var(--tw-shadow-color-01), ' +
+                    '-0.025em -0.05em 0 var(--tw-shadow-color-02), ' +
+                    '0.025em 0.05em 0 var(--tw-shadow-color-03)',
             },
 
             keyframes: {
@@ -176,28 +178,28 @@ module.exports = {
                             '-0.05em -0.025em 0 var(--tw-shadow-color-01), ' +
                             '0.025em -0.025em 0 var(--tw-shadow-color-02), ' +
                             '-0.05em -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 1
+                        opacity: 1,
                     },
                     '50%': {
                         textShadow:
                             '0.025em 0.05em 0 var(--tw-shadow-color-01), ' +
                             '0.05em 0 0 var(--tw-shadow-color-02), ' +
                             '0 -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 0
+                        opacity: 0,
                     },
                     '59%': {
                         textShadow:
                             '0.025em 0.05em 0 var(--tw-shadow-color-01), ' +
                             '0.05em 0 0 var(--tw-shadow-color-02), ' +
                             '0 -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 0
+                        opacity: 0,
                     },
                     '60%': {
                         textShadow:
                             '0.025em 0.05em 0 var(--tw-shadow-color-01), ' +
                             '0.05em 0 0 var(--tw-shadow-color-02), ' +
                             '0 -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 1
+                        opacity: 1,
                     },
                     '99%': {
                         textShadow:
@@ -206,7 +208,7 @@ module.exports = {
                             '0 -0.05em 0 var(--tw-shadow-color-03)',
                     },
                     '100%': {
-                        textShadow: 'unset'
+                        textShadow: 'unset',
                     },
                 },
                 'glitch-text-leave': {
@@ -233,21 +235,21 @@ module.exports = {
                             '-0.05em -0.025em 0 var(--tw-shadow-color-01), ' +
                             '0.025em -0.025em 0 var(--tw-shadow-color-02), ' +
                             '-0.05em -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 1
+                        opacity: 1,
                     },
                     '50%': {
                         textShadow:
                             '0.025em 0.05em 0 var(--tw-shadow-color-01), ' +
                             '0.05em 0 0 var(--tw-shadow-color-02), ' +
                             '0 -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 0
+                        opacity: 0,
                     },
                     '55%': {
                         textShadow:
                             '0.025em 0.05em 0 var(--tw-shadow-color-01), ' +
                             '0.05em 0 0 var(--tw-shadow-color-02), ' +
                             '0 -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 1
+                        opacity: 1,
                     },
                     '99%': {
                         textShadow:
@@ -260,7 +262,7 @@ module.exports = {
                             '-0.025em 0 0 var(--tw-shadow-color-01), ' +
                             '-0.025em -0.025em 0 var(--tw-shadow-color-02), ' +
                             '-0.025em -0.05em 0 var(--tw-shadow-color-03)',
-                        opacity: 0
+                        opacity: 0,
                     },
                 },
             },
@@ -282,6 +284,11 @@ module.exports = {
                 'glitch-text-00': 'glitch-text-leave 300ms 4 forwards',
                 'glitch-text-01': 'glitch-text 600ms 3 forwards',
                 'glitch-text-02': 'glitch-text-leave 400ms 5 forwards',
+                'glitch-text-00-inf':
+                    'glitch-text-leave 300ms infinite forwards',
+                'glitch-text-01-inf': 'glitch-text 600ms infinite forwards',
+                'glitch-text-02-inf':
+                    'glitch-text-leave 400ms infinite forwards',
             },
         },
     },
