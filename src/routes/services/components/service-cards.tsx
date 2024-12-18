@@ -1,5 +1,4 @@
 import React from 'react';
-
 import brandingIcon from '@/routes/services/assets/icon-service-branding.svg';
 import commerceIcon from '@/routes/services/assets/icon-service-commerce.svg';
 import mobileIcon from '@/routes/services/assets/icon-service-mobile.svg';
@@ -31,22 +30,34 @@ const ServiceCard = ({
         >
             <div
                 className={
-                    'flex size-full flex-col gap-4 rounded-xl bg-x-grey-gradient p-10 ' //this is the servicecards boxes
+                    'flex size-full flex-col gap-4 rounded-xl bg-transparent p-10 ' //this is the servicecards boxes
                 }
             >
-                                <h2 className={'font-subheading text-1xl font-bold text-white tracking-custom uppercase'}>
+                <h2
+                    className={
+                        'font-subheading text-1xl font-bold text-white tracking-custom uppercase'
+                    }
+                >
                     {title}
                 </h2>
                 <img src={icon} alt={''} className={'h-16 w-fit'} />
 
-                <p className={'font-bodycopy text-sm text-white tracking-wider leading-loose'}>{body}</p>
-                <h3
+                <p
                     className={
-                        'mt-6 font-subheading tracking-custom text-white underline hover:cursor-pointer'
+                        'font-bodycopy text-base text-white tracking-wider leading-loose'
                     }
                 >
-                    ENQUIRE
-                </h3>
+                    {body}
+                </p>
+                
+                <span className={'mt-6 font-subheading tracking-custom hover:cursor-pointer underline'}>
+    <span
+    
+        className="text-transparent bg-link-gradient bg-clip-text inline-block"
+    >
+        ENQUIRE
+    </span>
+</span>
             </div>
         </div>
     );
