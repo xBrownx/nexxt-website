@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { Heading } from '@/components/ui/text';
-import bgFlare from '@/routes/services/assets/bg-flare.png';
 import servicesheaderimg from '@/routes/services/assets/services img.png'
 
 import { ServiceCards } from '@/routes/services/components/service-cards';
 import { WhyChooseUs } from '@/routes/services/components/why-choose-us';
+import { LearnVideo } from '@/routes/services/components/learn-video'
 
 export function ServicesLanding() {
     return (
@@ -36,9 +35,9 @@ export function ServicesLanding() {
                 /> */}
             </section>
 
-            <section className="relative flex w-full items-center justify-center bg-white pt-20">
+            <section className="relative flex w-full items-center justify-center bg-y-grey-gradient pt-10">
                 <div className="w-[1440px]">
-                    <WhyChooseUs />
+                    <LearnVideo />
                 </div>
             </section>
         </>

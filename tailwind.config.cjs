@@ -24,7 +24,7 @@ module.exports = {
                     'linear-gradient(0.25turn, #C4ADEE, #00C79C)',
                 'link-gradient':
                     'linear-gradient(0.25turn, #00C79C, #C4ADEE)',
-                'y-grey-gradient': 'linear-gradient(#1A1A1A, #262626)',
+                'y-grey-gradient': 'linear-gradient(0.25turn, #121212, #262626)',
                 'x-grey-gradient':
                     'linear-gradient(0.50turn, #262626, #1A1A1A)',
                 'border-gradient':

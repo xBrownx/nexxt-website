@@ -1,5 +1,4 @@
-import React from 'react';
-import brandingIcon from '@/routes/services/assets/icon-service-branding.svg';
+import React from 'react';import brandingIcon from '@/routes/services/assets/icon-service-branding.svg';
 import commerceIcon from '@/routes/services/assets/icon-service-commerce.svg';
 import mobileIcon from '@/routes/services/assets/icon-service-mobile.svg';
 import solutionsIcon from '@/routes/services/assets/icon-service-solution.svg';
@@ -49,15 +48,16 @@ const ServiceCard = ({
                 >
                     {body}
                 </p>
-                
-                <span className={'mt-6 font-subheading tracking-custom hover:cursor-pointer underline'}>
-    <span
-    
-        className="text-transparent bg-link-gradient bg-clip-text inline-block"
-    >
-        ENQUIRE
-    </span>
-</span>
+
+                <span
+                    className={
+                        'mt-6 font-subheading tracking-custom hover:cursor-pointer underline'
+                    }
+                >
+                    <span className="text-transparent bg-link-gradient bg-clip-text inline-block">
+                        ENQUIRE
+                    </span>
+                </span>
             </div>
         </div>
     );
@@ -67,7 +67,7 @@ export const ServiceCards = () => {
     return (
         <div className={'flex w-full flex-col px-16'}>
             <div
-                className={'flex w-full  flex-row justify-center gap-16 pt-16 '}
+                className={'flex w-full  flex-row justify-center gap-16 pt-6 '}
             >
                 <ServiceCard
                     isLeft
