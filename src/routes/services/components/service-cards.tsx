@@ -1,4 +1,5 @@
-import React from 'react';import brandingIcon from '@/routes/services/assets/icon-service-branding.svg';
+import React from 'react';
+import brandingIcon from '@/routes/services/assets/icon-service-branding.svg';
 import commerceIcon from '@/routes/services/assets/icon-service-commerce.svg';
 import mobileIcon from '@/routes/services/assets/icon-service-mobile.svg';
 import solutionsIcon from '@/routes/services/assets/icon-service-solution.svg';

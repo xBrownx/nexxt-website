@@ -1,1 +1,132 @@
-import React from 'react';import { HeroRings } from '@/routes/our-work/components/hero-rings';export function OurWorkLanding() {    return (        <section className="flex h-screen items-center justify-center bg-y-grey-gradient">            <div className="flex h-full w-[1440px] items-center justify-center gap-20">                <div className={'size-full flex-1'}>                    <HeroRings />                </div>                <div className={'flex flex-1 flex-col gap-6'}>                    <h1                        className={                            'font-lato text-5xl font-bold text-primary-white'                        }                    >                        Our Work                    </h1>                    <p                        className={                            'w-3/5 text-justify font-lato text-lg font-light tracking-wide text-white/80'                        }                    >                        From local legends to global players, we’ve worked with                        businesses of all shapes and sizes. Whether it’s web                        design, app development, branding, or prototyping, we                        turn big ideas into standout solutions with a creative                        edge.                    </p>                </div>            </div>        </section>    );}
+import { GlitchHover } from '@/features/glitch-text';
+export function OurWorkLanding({
+    onP1Click,
+    onP2Click,
+    onP3Click,
+    onP4Click,
+    onP5Click,
+    onP6Click,
+    onTeamClick,
+}: {
+    onP1Click: () => void;
+    onP2Click: () => void;
+    onP3Click: () => void;
+    onP4Click: () => void;
+    onP5Click: () => void;
+    onP6Click: () => void;
+    onTeamClick: () => void;
+}) {
+    return (
+        <section className="flex h-screen items-center justify-between bg-y-grey-gradient px-[calc((100%-1440px)/2)]">
+            <div className="flex justify-start">
+                <h1 className="font-title text-5xl font-bold text-primary-white">
+                    Team Projects
+                </h1>
+            </div>
+
+            <div className="grid w-2/3 grid-cols-3 gap-y-6 gap-x-10">
+                <div className="col-span-1 text-left font-subheading text-sm tracking-custom text-white/50 flex items-center justify-between">
+                    PROJECT /01
+                    <div
+                        className="ml-2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+
+                <div
+                    className="col-span-1 text-left font-bodycopy text-2xl text-white"
+                    onClick={onP1Click}
+                >
+                    <GlitchHover>Hake House of Art</GlitchHover>
+                </div>
+                <div className="col-span-1 text-right font-subheading text-sm tracking-custom text-white/50">
+                    APP DEVELOPMENT
+                </div>
+
+                <div className="col-span-1 text-left font-subheading text-sm tracking-custom text-white/50 flex items-center justify-between">
+                    PROJECT /02
+                    <div
+                        className="ml-2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+                <div
+                    className="col-span-1 text-left font-bodycopy text-2xl text-white"
+                    onClick={onP2Click}
+                >
+                    <GlitchHover>Replika</GlitchHover>
+                </div>
+                <div className="col-span-1 text-right font-subheading text-sm tracking-custom text-white/50">
+                    UI/UX DESIGN
+                </div>
+                <div className="col-span-1 text-left font-subheading text-sm tracking-custom text-white/50 flex items-center justify-between">
+                    PROJECT /03
+                    <div
+                        className="ml-2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+                <div
+                    className="col-span-1 text-left font-bodycopy text-2xl text-white"
+                    onClick={onP3Click}
+                >
+                    <GlitchHover>Average Joe's</GlitchHover>
+                </div>
+                <div className="col-span-1 text-right font-subheading text-sm tracking-custom text-white/50">
+                    APP DEVELOPMENT
+                </div>
+
+                <div className="col-span-1 text-left font-subheading text-sm tracking-custom text-white/50 flex items-center justify-between">
+                    PROJECT /04
+                    <div
+                        className="ml-2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+                <div
+                    className="col-span-1 text-left font-bodycopy text-2xl text-white"
+                    onClick={onP4Click}
+                >
+                    <GlitchHover>140 Williams</GlitchHover>
+                </div>
+                <div className="col-span-1 text-right font-subheading text-sm tracking-custom text-white/50">
+                    WEB DEVELOPMENT
+                </div>
+
+                <div className="col-span-1 text-left font-subheading text-sm tracking-custom text-white/50 flex items-center justify-between">
+                    PROJECT /05
+                    <div
+                        className="ml-2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+                <div
+                    className="col-span-1 text-left font-bodycopy text-2xl text-white"
+                    onClick={onP5Click}
+                >
+                    <GlitchHover>My Dog Walker</GlitchHover>
+                </div>
+                <div className="col-span-1 text-right font-subheading text-sm tracking-custom text-white/50">
+                    APP DEVELOPMENT
+                </div>
+
+                <div className="col-span-1 text-left font-subheading text-sm tracking-custom text-white/50 flex items-center justify-between">
+                    PROJECT /06
+                    <div
+                        className="ml-2 w-0 h-0 border-t-[8px] border-t-transparent border-b-[8px] border-b-transparent border-l-[8px] border-l-white"
+                        aria-hidden="true"
+                    ></div>
+                </div>
+                <div
+                    className="col-span-1 text-left font-bodycopy text-2xl text-white"
+                    onClick={onP6Click}
+                >
+                    <GlitchHover>NEXT </GlitchHover>
+                </div>
+                <div className="col-span-1 text-right font-subheading text-sm tracking-custom text-white/50">
+                    UI/UX Design
+                </div>
+            </div>
+        </section>
+    );
+}
