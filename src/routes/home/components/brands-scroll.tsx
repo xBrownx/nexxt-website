@@ -1,82 +1,1 @@
-import { InfiniteScroll } from '@/features/infitine-scroll';
-import averageJoesLogo from '@/routes/home/assets/average-joes-logo.png';
-import elceLogo from '@/routes/home/assets/elce-logo.png';
-import hakeLogo from '@/routes/home/assets/hake-logo.png';
-import lappLogo from '@/routes/home/assets/lapp-logo.png';
-
-import lcTransitLogo from '@/routes/home/assets/lc-transit-logo.png';
-import replikaLogo from '@/routes/home/assets/replika-logo.png';
-export const BrandsScroll = () => {
-    return (
-        <InfiniteScroll>
-            <div className={'flex w-full flex-row px-8'}>
-                <a
-                    href="https://lctransit.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={lcTransitLogo}
-                        alt="lcTransitLogo"
-                        className="opacity-30 hover:opacity-100 transition-opacity duraction-300"
-                    />
-                </a>
-                <a
-                    href="https://elceswim.com/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={elceLogo}
-                        alt="elceLogo"
-                        className="opacity-30 hover:opacity-100 transition-opacity duraction-300"
-                    />
-                </a>
-                <a
-                    href="https://www.hake.house/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={hakeLogo}
-                        alt="hakeLogo"
-                        className="opacity-30 hover:opacity-100 transition-opacity duraction-300"
-                    />
-                </a>
-                <a
-                    href="https://averagejoescoffee.com.au"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={averageJoesLogo}
-                        alt="averageJoesLogo"
-                        className="opacity-30 hover:opacity-100 transition-opacity duraction-300"
-                    />
-                </a>
-                <a
-                    href="https://replika.au/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={replikaLogo}
-                        alt="replikaLogo"
-                        className="opacity-30 hover:opacity-100 transition-opacity duraction-300"
-                    />
-                </a>
-                <a
-                    href="https://lappaustralia.com.au/en/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <img
-                        src={lappLogo}
-                        alt="lappLogo"
-                        className="opacity-30 hover:opacity-100 transition-opacity duraction-300"
-                    />
-                </a>
-            </div>
-        </InfiniteScroll>
-    );
-};
+import { InfiniteScroll } from '@/features/infitine-scroll';import averageJoesLogo from '@/routes/home/assets/average-joes-logo.png';import elceLogo from '@/routes/home/assets/elce-logo.png';import hakeLogo from '@/routes/home/assets/hake-logo.png';import lappLogo from '@/routes/home/assets/lapp-logo.png';import lcTransitLogo from '@/routes/home/assets/lc-transit-logo.png';import replikaLogo from '@/routes/home/assets/replika-logo.png';const BRANDS = [    {        alt: 'lcTransitLogo',        img: lcTransitLogo,        href: 'https://lctransit.com',    },    {        alt: 'elceLogo',        img: elceLogo,        href: 'https://elceswim.com/',    },    {        alt: 'hakeLogo',        img: hakeLogo,        href: 'https://www.hake.house/',    },    {        alt: 'averageJoesLogo',        img: averageJoesLogo,        href: 'https://averagejoescoffee.com.au',    },    {        alt: 'replikaLogo',        img: replikaLogo,        href: 'https://replika.au/',    },    {        alt: 'lappLogo',        img: lappLogo,        href: 'https://lappaustralia.com.au/en/',    },];export const BrandsScroll = () => {    return (        <div className={'flex w-full '}>            <InfiniteScroll>                <div className={'flex w-full flex-row px-8'}>                    {BRANDS.map((brand, idx) => (                        <a                            key={brand.alt}                            href={brand.href}                            target="_blank"                            rel="noopener noreferrer"                        >                            <img                                src={brand.img}                                alt={brand.alt}                                className={                                    'opacity-30 transition-opacity duration-300 hover:opacity-100'                                }                            />                        </a>                    ))}                    {BRANDS.map((brand, idx) => (                        <a                            key={brand.alt}                            href={brand.href}                            target="_blank"                            rel="noopener noreferrer"                        >                            <img                                src={brand.img}                                alt={brand.alt}                                className={                                    'opacity-30 transition-opacity duration-300 hover:opacity-100'                                }                            />                        </a>                    ))}                </div>            </InfiniteScroll>        </div>    );};
